@@ -34,9 +34,9 @@ Version: 1.2-r0
 Section: base
 Architecture: dm800se
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-MD5Sum: cc71f6feeb898f2d8ce6c5a398a136e0
-SHA256sum: c0a162e8d2145378956da23692d3487797d1beac7c58b57c52fe16336bc09a60
-Size: 868
+MD5Sum: b9509dfbd1b9a339649ba87cb7d8d102
+SHA256sum: d58ce1a81606e22b1edcdf8168dc02844ba541ae833eca6de13535220f1e7b68
+Size: 866
 Filename: 3rd-party-feed-configs_1.2-r0_dm800se.ipk
 Source: 3rd-party-feed-configs.bb
 Description: 3rd-party-feed-configs version 1.2-r0
@@ -224,8 +224,8 @@ Recommends: freetype-dbg, glibc-dbg, libgcc-dbg, libjpeg-turbo-dbg, libpng-dbg, 
 Section: devel
 Architecture: dm800se
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-MD5Sum: 783310e3947b0192b29c8d5bff71896c
-SHA256sum: a1c9f73a6b2401239d091504ad85544813a43c0da320907c1f9ea66861361402
+MD5Sum: a246d56e8748c887e1ce50853d3e1e0d
+SHA256sum: 77e0fe5367dc50d560e6342a974f65738da8b282b03cb8affce1c45e9eb1aa00
 Size: 4765916
 Filename: directfb-dbg_1.7.7-r0_dm800se.ipk
 Source: directfb_1.7.7.bb
@@ -271,12 +271,12 @@ Priority: optional
 
 Package: directfb
 Version: 1.7.7-r0
-Depends: libc6 (>= 2.39+git0+662516aca8), libfreetype6 (>= 2.13.2), libgcc1 (>= 13.3.0), libjpeg62 (>= 3.0.1), libpng16-16 (>= 1.6.42), libstdc++6 (>= 13.3.0), libz1 (>= 1.3.1)
+Depends: libc6 (>= 2.39+git0+3463100f2d), libfreetype6 (>= 2.13.2), libgcc1 (>= 13.3.0), libjpeg62 (>= 3.0.1), libpng16-16 (>= 1.6.42), libstdc++6 (>= 13.3.0), libz1 (>= 1.3.1)
 Section: libs
 Architecture: dm800se
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-MD5Sum: 74152d712a11c0cdeb4abb6c79084778
-SHA256sum: 85624862142843927332cca5ba318220ba4f4339aab2a345932d0931613c6d2e
+MD5Sum: 1f42445fb18befa2f6847b1fe8b62b20
+SHA256sum: f32852c09d7efdb37d847a76b7513f28274d7a5185c53336910f7de60aeea97b
 Size: 1090784
 Filename: directfb_1.7.7-r0_dm800se.ipk
 Source: directfb_1.7.7.bb
@@ -334,13 +334,13 @@ Priority: optional
 
 Package: dreambox-blindscan-utils
 Version: 1.12-r4
-Depends: libc6 (>= 2.39+git0+662516aca8), libncurses5 (>= 6.4), libtinfo5 (>= 6.4)
+Depends: libc6 (>= 2.39+git0+3463100f2d), libncurses5 (>= 6.4), libtinfo5 (>= 6.4)
 Provides: virtual-blindscan-dvbc, virtual-blindscan-dvbs
 Section: base
 Architecture: dm800se
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-MD5Sum: fd02a9ae9f873b39b96932b0270e4a3a
-SHA256sum: c2f2db836fddb9040d4393d9c6c2c283a2ca27e9e0698f43e11e7fde53efe9ef
+MD5Sum: 79d8b2d649f2f5f7463a7739a533bb5d
+SHA256sum: 0dd8892371ff6d54ff9bcaf2a9dcd80bf0f7351d8cab90a5aa754be46ecc635b
 Size: 81340
 Filename: dreambox-blindscan-utils_1.12-r4_dm800se.ipk
 Source: dreambox-blindscan-utils_1.12.bb
@@ -382,14 +382,29 @@ OE: dreambox-secondstage-dm800se
 License: Proprietary
 Priority: required
 
+Package: dvb-usb-drivers-meta
+Version: 1.2-r0
+Section: base
+Architecture: dm800se
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: f050bbf0d59cc743f47281a4dae3c5d1
+SHA256sum: 6f100b76ae0c577cc143b4da4c381f378616a6d11ffd8f3a4f14a5a5b408e573
+Size: 532
+Filename: dvb-usb-drivers-meta_1.2-r0_dm800se.ipk
+Source: dvb-usb-drivers-meta.bb
+Description: dvb-usb-drivers-meta version 1.2-r0
+OE: dvb-usb-drivers-meta
+License: GPL-2.0-or-later
+Priority: optional
+
 Package: enigma-info
 Version: Scarthgap-r0
 Section: base
 Architecture: dm800se
 Maintainer: OpenPLi team
-MD5Sum: 9b54091423f2948dbb2ebe279b1b09b5
-SHA256sum: 3d465c94a5d97ff51e93bf241336f6a1ceecd14481bb30eadd26466f13f47e35
-Size: 3138
+MD5Sum: 86687fe6dfcd3b6e1a470d32e286cf73
+SHA256sum: dea72dace95a018592bc2e7dbeeec3c3f4d9f47760506a79ef7fa0c434870752
+Size: 3152
 Filename: enigma-info_Scarthgap-r0_dm800se.ipk
 Source: enigma-info.bb
 Description: enigma.info used by BoxInfo
@@ -462,261 +477,143 @@ HomePage: https://github.com/DimitarCC/e2-boxlogos
 License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-dbg
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Recommends: freetype-dbg, fribidi-dbg, giflib-dbg, glib-2.0-dbg, glibc-dbg, libavahi-client-dbg, libavahi-common-dbg, libcrypto-dbg, libdreamdvd-dbg, libdvbsi++-dbg, libgcc-dbg, libgomp-dbg, libjpeg-turbo-dbg, libpng-dbg, libpython3-dbg, libsigc++-3-dbg, libssl-dbg, libstdc++-dbg, libtuxtxt-dbg, libudfread-dbg, libxcrypt-dbg, libxml2-dbg, tuxtxt-enigma2-dbg
-Section: devel
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 56bec10f69c52b4f87689ad2b9a34bb9
-SHA256sum: 44515b5053839a068ef8a88079cf9384fbec1f3de27efff9792f13a44a82afd8
-Size: 778
-Filename: enigma2-dbg_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: GUI frontend for Open Source Linux based receivers - Debugging files
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-dev
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Depends: enigma2
-Recommends: aio-grab-dev, alsa-conf-dev, avahi-dev, cdrkit-dev, dvd+rw-tools-dev, dvdauthor-dev, enigma-info-dev, enigma2 (= 3.12+git22002+b3fe3ba0+b3fe3ba053-r0), enigma2-fonts-dev, enigma2-timezones-dev, ethtool-dev, font-valis-enigma-dev, freetype-dev, fribidi-dev, genisoimage-dev, giflib-dev, glib-2.0-dev, glibc-dev, glibc-gconv-cp1250-dev, glibc-gconv-iso8859-15-dev, hotplug-e2-helper-dev, jpeg-dev, libavahi-client-dev, libavahi-common-dev, libcrypto-dev, libdreamdvd-dev, libdvbsi++-dev, libgcc-dev, libgomp-dev, libjpeg-turbo-dev, libmad-dev, libpng-dev, libpython3-dev, libsigc++-3-dev, libssl-dev, libstdc++-dev, libtuxtxt-dev, libudfread-dev, libxcrypt-dev, libxml2-dev, mjpegtools-dev, oe-alliance-branding-dev, openssl-dev, python3-codecs-dev, python3-core-dev, python3-crypt-dev, python3-dev, python3-fcntl-dev, python3-imaging-dev, python3-logging-dev, python3-mmap-dev, python3-netclient-dev, python3-netifaces-dev, python3-netserver-dev, python3-numbers-dev, python3-pickle-dev, python3-pillow-dev, python3-shell-dev, python3-threading-dev, python3-twisted-core-dev, python3-twisted-dev, python3-twisted-web-dev, python3-urllib3-dev, python3-wifi-dev, python3-xml-dev, python3-zopeinterface-dev, replex-dev, tuxtxt-enigma2-dev, virtual-blindscan-dvbc-dev, wireless-tools-dev, wpa-supplicant-dev
-Section: devel
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: f64198b75f70f6c73f2ed0e5fc47a242
-SHA256sum: 6dc0d1feac6f57ad3b01dc22a970ee07dfb17b1babed58ee685b8538511b1b9a
-Size: 171622
-Filename: enigma2-dev_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: GUI frontend for Open Source Linux based receivers - Development files
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-fonts
-Version: 2020.10.17-r0
+Package: enigma2-plugin-drivers-atsc-usb-hauppauge-950q
+Version: 1.0-r0
+Recommends: firmware-xc5000c, kernel-module-au0828, kernel-module-au8522, kernel-module-au8522-common, kernel-module-au8522-dig, kernel-module-tveeprom, kernel-module-xc5000
 Section: base
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 473354c8ada80d517fede51e0635b111
-SHA256sum: dd554574bebaa3455a2441b84fc9e7edfea3bfb83084a462d11d450098345e57
-Size: 3050522
-Filename: enigma2-fonts_2020.10.17-r0_dm800se.ipk
-Source: enigma2.bb
-Description: GUI frontend for Open Source Linux based receivers
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: aa6ee8677e9d96e93ea2c9c11b2266ee
+SHA256sum: 532ab764ab56ba887875562ecaf39520cf7fa9c5e560c402d8ba2a4ec6f7498c
+Size: 636
+Filename: enigma2-plugin-drivers-atsc-usb-hauppauge-950q_1.0-r0_dm800se.ipk
+Source: enigma2-plugin-drivers-atsc-usb-hauppauge-950q.bb
+Description: enigma2-plugin-drivers-atsc-usb-hauppauge-950q version 1.0-r0
+OE: enigma2-plugin-drivers-atsc-usb-hauppauge-950q
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-meta
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
+Package: enigma2-plugin-drivers-dvb-usb-af9015
+Version: 1.1-r0
+Recommends: firmware-dvb-fe-af9013, firmware-dvb-usb-af9015, kernel-module-af9013, kernel-module-dvb-pll, kernel-module-dvb-usb, kernel-module-dvb-usb-af9015, kernel-module-mc44s803, kernel-module-mt2060, kernel-module-mxl5005s, kernel-module-mxl5007t, kernel-module-qt1010, kernel-module-stv0299, kernel-module-tda18218, kernel-module-tda18271
 Section: base
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: e918dd28cd6df83639494ccf6854d3c3
-SHA256sum: 802aa63c31689d1a5f8e910a460b734daeebbb7602af141d49d4352aae71e24e
-Size: 4654
-Filename: enigma2-meta_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: GUI frontend for Open Source Linux based receivers
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 35edd585cf2314032090dfa086569ef7
+SHA256sum: 074398c2da97f1d4da6000f6696cd78712c7426303d737309a4672b6d37b10b2
+Size: 658
+Filename: enigma2-plugin-drivers-dvb-usb-af9015_1.1-r0_dm800se.ipk
+Source: enigma2-plugin-drivers-dvb-usb-af9015.bb
+Description: enigma2-plugin-drivers-dvb-usb-af9015 version 1.1-r0
+OE: enigma2-plugin-drivers-dvb-usb-af9015
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-extensions-cutlisteditor-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
+Package: enigma2-plugin-drivers-dvb-usb-dib0700
+Version: 1.1-r0
+Recommends: firmware-dvb-usb-dib0700-1.10, firmware-dvb-usb-dib0700-1.20, firmware-dvb-usb-dibusb-5.0.0.11, firmware-dvb-usb-dibusb-6.0.0.8, firmware-dvb-usb-dibusb-an2235-01, firmware-xc3028-v27, firmware-xc3028l-v36, kernel-module-dib0070, kernel-module-dib0090, kernel-module-dib3000mb, kernel-module-dib3000mc, kernel-module-dib7000m, kernel-module-dib7000p, kernel-module-dib8000, kernel-module-dibx000-common, kernel-module-dvb-usb, kernel-module-dvb-usb-dib0700, kernel-module-dvb-usb-dibusb-common, kernel-module-dvb-usb-dibusb-mc, kernel-module-fc0013, kernel-module-mt2060, kernel-module-mt2266, kernel-module-tuner-xc2028
 Section: base
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 176e70657674a483f118fd8f71763425
-SHA256sum: a5f73db183c84d8e9793632e3056f4b0f5b83822605b66926758e47e02def6db
-Size: 5838
-Filename: enigma2-plugin-extensions-cutlisteditor-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: extensions-cutlisteditor (sources)
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: d0f3f35acd77ea3199f5d96199da0f27
+SHA256sum: 67171a819b51092655814efa6aca08ee294027ccdd6654c69f853e6e9c320daa
+Size: 706
+Filename: enigma2-plugin-drivers-dvb-usb-dib0700_1.1-r0_dm800se.ipk
+Source: enigma2-plugin-drivers-dvb-usb-dib0700.bb
+Description: enigma2-plugin-drivers-dvb-usb-dib0700 version 1.1-r0
+OE: enigma2-plugin-drivers-dvb-usb-dib0700
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-extensions-cutlisteditor
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Depends: aio-grab
+Package: enigma2-plugin-drivers-dvb-usb-dtt200u
+Version: 1.1-r0
+Recommends: firmware-dvb-usb-dtt200u-01, firmware-dvb-usb-wt220u-02, firmware-dvb-usb-wt220u-fc03, firmware-dvb-usb-wt220u-miglia-01, firmware-dvb-usb-wt220u-zl0353-01, kernel-module-dvb-usb-dtt200u
 Section: base
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 41e03bdc226a7f84a91ed52433cbd68d
-SHA256sum: 35d68fd89eb05bb95c1722d79b5d90e32fbf656e70845fb0d5d51d047ede70a8
-Size: 13064
-Filename: enigma2-plugin-extensions-cutlisteditor_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: extensions-cutlisteditor
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 9c506fee5ace6c2a846abef4934eb7f9
+SHA256sum: 51a5094c02e26671d47b88ae3fef1934b172794a75be8795510b19a01eb6cbdf
+Size: 612
+Filename: enigma2-plugin-drivers-dvb-usb-dtt200u_1.1-r0_dm800se.ipk
+Source: enigma2-plugin-drivers-dvb-usb-dtt200u.bb
+Description: enigma2-plugin-drivers-dvb-usb-dtt200u version 1.1-r0
+OE: enigma2-plugin-drivers-dvb-usb-dtt200u
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-extensions-dvdburn-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
+Package: enigma2-plugin-drivers-dvb-usb-dw2102
+Version: 1.1-r0
+Recommends: firmware-dvb-fe-ds3000, firmware-dvb-usb-s660, kernel-module-dvb-usb-dw2102, kernel-module-stb6100, kernel-module-stv090x
 Section: base
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: fa920c3369e130d9ee47eae4263455a2
-SHA256sum: bc46641ca5dfb85ec6cb043f35285a99215892802e2354c555da7f7cff65352b
-Size: 25862
-Filename: enigma2-plugin-extensions-dvdburn-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: extensions-dvdburn (sources)
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: d4829bb6925304dadfedaa5f25b81bb0
+SHA256sum: 146e366e58de50df205985f173d268ca9f5ed8aa71d400e42c1e0a507e7ffc9c
+Size: 616
+Filename: enigma2-plugin-drivers-dvb-usb-dw2102_1.1-r0_dm800se.ipk
+Source: enigma2-plugin-drivers-dvb-usb-dw2102.bb
+Description: enigma2-plugin-drivers-dvb-usb-dw2102 version 1.1-r0
+OE: enigma2-plugin-drivers-dvb-usb-dw2102
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-extensions-dvdburn
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Depends: dvd+rw-tools, dvdauthor, genisoimage, mjpegtools, python3-imaging, replex
+Package: enigma2-plugin-drivers-dvb-usb-siano
+Version: 1.1-r0
+Recommends: firmware-dvb-nova-12mhz-b0, firmware-dvb-siano, firmware-isdbt-nova-12mhz-b0, kernel-module-smsdvb, kernel-module-smsmdtv, kernel-module-smsusb
 Section: base
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 3d7cd923ec3e6c822ec151167f6ad9ba
-SHA256sum: f3de48abaa2ea907e5c416e693bae2b9bd8607d1fe7961ad15a26c37435a63bc
-Size: 851108
-Filename: enigma2-plugin-extensions-dvdburn_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: extensions-dvdburn
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: a70654d787cea1274538d677e4cdb1c6
+SHA256sum: 1e962018505ae1ebcf962815f477f4a05c8d4b29a5d7ff97d6e815925d01e7b3
+Size: 610
+Filename: enigma2-plugin-drivers-dvb-usb-siano_1.1-r0_dm800se.ipk
+Source: enigma2-plugin-drivers-dvb-usb-siano.bb
+Description: enigma2-plugin-drivers-dvb-usb-siano version 1.1-r0
+OE: enigma2-plugin-drivers-dvb-usb-siano
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-extensions-dvdplayer-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
+Package: enigma2-plugin-drivers-dvb-usb-tbs
+Version: 1.1-r0
+Recommends: firmware-dvb-usb-tbs5925, firmware-dvb-usb-tbs5980, kernel-module-cx24116, kernel-module-dvb-usb-tbsusb, kernel-module-stb6000, kernel-module-stb6100, kernel-module-stv0288, kernel-module-stv0299, kernel-module-stv090x, kernel-module-tda10071
 Section: base
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 3550ec388b712d6bd72a65cd84fe9c62
-SHA256sum: b1970105cf8cf28deea78662dd642781b9fab88dea5445d19807990e9dd5a7dc
-Size: 1910
-Filename: enigma2-plugin-extensions-dvdplayer-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: extensions-dvdplayer (sources)
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 019c37f00b3a641aa86897fe36576ba2
+SHA256sum: b7b133c907a27f7e62ee3e7e59e0efef3abf075852f4b2b3f01c5a1293cd506b
+Size: 628
+Filename: enigma2-plugin-drivers-dvb-usb-tbs_1.1-r0_dm800se.ipk
+Source: enigma2-plugin-drivers-dvb-usb-tbs.bb
+Description: enigma2-plugin-drivers-dvb-usb-tbs version 1.1-r0
+OE: enigma2-plugin-drivers-dvb-usb-tbs
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-extensions-dvdplayer
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Recommends: kernel-module-udf
+Package: enigma2-plugin-drivers-dvb-usb-technisat-skystar
+Version: 1.0-r0
+Recommends: blindscan-s2, firmware-dvb-usb-technisat-skystar, kernel-module-dvb-usb-technisat-usb2, kernel-module-stv090x, kernel-module-stv6110x
 Section: base
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 64b5a20d74b0783eff6a0e675dfdf963
-SHA256sum: b9f0bce1d695ae033cf499fce903ac20ceb8c32f773fdc925b4e9d01e41ec01a
-Size: 3984
-Filename: enigma2-plugin-extensions-dvdplayer_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: extensions-dvdplayer
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-extensions-graphmultiepg-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: a75c914fc28399de9ec3220b58f1325b
-SHA256sum: 77ba858dcbe3cf9b04b546f83d784398943e2e7dc8a42e18724c081a567b67b9
-Size: 17276
-Filename: enigma2-plugin-extensions-graphmultiepg-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: extensions-graphmultiepg (sources)
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-extensions-graphmultiepg
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 0c3551ed824a17e82ad61f1d6cebb5dc
-SHA256sum: b285b1c77aea8522f35ee2b0c52f437cbf49a98c51afc3ba82c6fb1975b3ee14
-Size: 45784
-Filename: enigma2-plugin-extensions-graphmultiepg_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: extensions-graphmultiepg
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-extensions-mediaplayer-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 022797807431f08a2ed7b72107805b86
-SHA256sum: 9677e49a78dbc205a89a537e27059a4356df40a2a2010121c838f255ad234784
-Size: 12956
-Filename: enigma2-plugin-extensions-mediaplayer-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: extensions-mediaplayer (sources)
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-extensions-mediaplayer
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 3398f95d5050ecc44d7b188fd9d7f5c7
-SHA256sum: 2b484c92d2b9b7524973b109361d278abb062b327e39749856c9b169dd239eaa
-Size: 36932
-Filename: enigma2-plugin-extensions-mediaplayer_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: extensions-mediaplayer
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-extensions-mediascanner-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: d4678e367bf6114c5a5628e0302ecc33
-SHA256sum: 3e9518cd8bfb0f4d4baa05f70153b8c21b3317afba22d453936d7a513675cedc
-Size: 1992
-Filename: enigma2-plugin-extensions-mediascanner-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: extensions-mediascanner (sources)
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-extensions-mediascanner
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: e6371f5cb433b5eec23566e197fea938
-SHA256sum: 534230a9c9ba91f670cb232041412bc8b0773b2059aa003ec1cd669adc66140e
-Size: 6940
-Filename: enigma2-plugin-extensions-mediascanner_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: extensions-mediascanner
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: fe339d273cb38c4978e46b65b072d981
+SHA256sum: 8bb0960367c1267cdda58056612e01ffefad34d0a814d8e8409ac4239f5640df
+Size: 616
+Filename: enigma2-plugin-drivers-dvb-usb-technisat-skystar_1.0-r0_dm800se.ipk
+Source: enigma2-plugin-drivers-dvb-usb-technisat-skystar.bb
+Description: enigma2-plugin-drivers-dvb-usb-technisat-skystar version 1.0-r0
+OE: enigma2-plugin-drivers-dvb-usb-technisat-skystar
+License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-extensions-openwebif-dbg
-Version: 1.5.2-git4661+750db970+750db97155-r0
+Version: 1.5.2-git4670+68220730+6822073a07-r0
 Section: devel
 Architecture: dm800se
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-MD5Sum: 4353cb88ca414152e4fb7ff5748bd870
-SHA256sum: b343bb2d09ed41990e0556e02fb9d2b10e552003d42e229e35400739cf4049b8
-Size: 636
-Filename: enigma2-plugin-extensions-openwebif-dbg_1.5.2-git4661+750db970+750db97155-r0_dm800se.ipk
+MD5Sum: 10c7bb1ff0c07e862e55eb41dc61d7a1
+SHA256sum: 1406599c71a0f283c21947decf6e589486f2d5ac85536cfd0034f0b6a155cdf2
+Size: 632
+Filename: enigma2-plugin-extensions-openwebif-dbg_1.5.2-git4670+68220730+6822073a07-r0_dm800se.ipk
 Source: enigma2-plugin-extensions-openwebif.bb
 Description: enigma2-plugin-extensions-openwebif version git-r0 - Debugging files
 OE: enigma2-plugin-extensions-openwebif
@@ -724,15 +621,15 @@ License: GPL-2.0-only
 Priority: optional
 
 Package: enigma2-plugin-extensions-openwebif-dev
-Version: 1.5.2-git4661+750db970+750db97155-r0
-Recommends: aio-grab-dev, enigma2-plugin-extensions-openwebif (= 1.5.2-git4661+750db970+750db97155-r0), python3-cheetah-dev, python3-compression-dev, python3-core-dev, python3-dev, python3-ipaddress-dev, python3-json-dev, python3-misc-dev, python3-numbers-dev, python3-pprint-dev, python3-pyopenssl-dev, python3-shell-dev, python3-six-dev, python3-twisted-web-dev, python3-unixadmin-dev
+Version: 1.5.2-git4670+68220730+6822073a07-r0
+Recommends: aio-grab-dev, enigma2-plugin-extensions-openwebif (= 1.5.2-git4670+68220730+6822073a07-r0), python3-cheetah-dev, python3-compression-dev, python3-core-dev, python3-dev, python3-ipaddress-dev, python3-json-dev, python3-misc-dev, python3-numbers-dev, python3-pprint-dev, python3-pyopenssl-dev, python3-shell-dev, python3-six-dev, python3-twisted-web-dev, python3-unixadmin-dev
 Section: devel
 Architecture: dm800se
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-MD5Sum: 45d82bc33b10c15af90342005d0b0fba
-SHA256sum: 9c0e9de1076188aa071d22bd8563c15a4edf7b4de2a3a83dee7cf0ef3f5064a0
-Size: 768
-Filename: enigma2-plugin-extensions-openwebif-dev_1.5.2-git4661+750db970+750db97155-r0_dm800se.ipk
+MD5Sum: 781557af0ca9f2203be28dcc0a0025bc
+SHA256sum: e70f5e3f55ad634ee27f3d4612a8ffedc4e85e23f571a8f5832b65b099855ebb
+Size: 764
+Filename: enigma2-plugin-extensions-openwebif-dev_1.5.2-git4670+68220730+6822073a07-r0_dm800se.ipk
 Source: enigma2-plugin-extensions-openwebif.bb
 Description: enigma2-plugin-extensions-openwebif version git-r0 - Development files
 OE: enigma2-plugin-extensions-openwebif
@@ -740,15 +637,15 @@ License: GPL-2.0-only
 Priority: optional
 
 Package: enigma2-plugin-extensions-openwebif-src
-Version: 1.5.2-git4661+750db970+750db97155-r0
+Version: 1.5.2-git4670+68220730+6822073a07-r0
 Depends: enigma2-plugin-extensions-openwebif
 Section: devel
 Architecture: dm800se
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-MD5Sum: 110f00e5596c7df6e64d88da0449e932
-SHA256sum: d0808f5f831a39bf019644cf7a13fe4b0e8d35c9338e4216df85937e3d8b88a7
-Size: 354776
-Filename: enigma2-plugin-extensions-openwebif-src_1.5.2-git4661+750db970+750db97155-r0_dm800se.ipk
+MD5Sum: eabcdeb91045bf77eb6af384a71a30b7
+SHA256sum: 986b95914c388f3d5ac9c1e14fd2f6c02a33a960530035fb5b366836e15de5dd
+Size: 354504
+Filename: enigma2-plugin-extensions-openwebif-src_1.5.2-git4670+68220730+6822073a07-r0_dm800se.ipk
 Source: enigma2-plugin-extensions-openwebif.bb
 Description: enigma2-plugin-extensions-openwebif version git-r0 - Source files
 OE: enigma2-plugin-extensions-openwebif
@@ -756,15 +653,15 @@ License: GPL-2.0-only
 Priority: optional
 
 Package: enigma2-plugin-extensions-openwebif-vxg
-Version: 1.5.2-git4661+750db970+750db97155-r0
+Version: 1.5.2-git4670+68220730+6822073a07-r0
 Depends: enigma2-plugin-extensions-openwebif
 Section: base
 Architecture: dm800se
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-MD5Sum: 0038282390af09e537203aacba1d9948
-SHA256sum: d11509f46945fe710f63979108f376273291a0647b252b10c8d059eb17fa1c87
-Size: 1459862
-Filename: enigma2-plugin-extensions-openwebif-vxg_1.5.2-git4661+750db970+750db97155-r0_dm800se.ipk
+MD5Sum: 2f2968858e0d4a914d6a170dfb188863
+SHA256sum: 68ed992d3c37558441e61aa5a4695c491ead0cd2e46d1d965935ca6428875ad6
+Size: 1459858
+Filename: enigma2-plugin-extensions-openwebif-vxg_1.5.2-git4670+68220730+6822073a07-r0_dm800se.ipk
 Source: enigma2-plugin-extensions-openwebif.bb
 Description: enigma2-plugin-extensions-openwebif version git-r0
 OE: enigma2-plugin-extensions-openwebif
@@ -772,532 +669,272 @@ License: GPL-2.0-only
 Priority: optional
 
 Package: enigma2-plugin-extensions-openwebif
-Version: 1.5.2-git4661+750db970+750db97155-r0
+Version: 1.5.2-git4670+68220730+6822073a07-r0
 Depends: aio-grab, python3-cheetah, python3-compression, python3-core, python3-ipaddress, python3-json, python3-misc, python3-numbers, python3-pprint, python3-pyopenssl, python3-shell, python3-six, python3-twisted-web, python3-unixadmin
 Section: base
 Architecture: dm800se
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-MD5Sum: 063e591fc7310451e68887d028e2e15a
-SHA256sum: cabc6723805616f987c79b50d58ea2040538a32bb89691c3ff5143488334b2ba
-Size: 2312390
-Filename: enigma2-plugin-extensions-openwebif_1.5.2-git4661+750db970+750db97155-r0_dm800se.ipk
+MD5Sum: c0264f8c189a04d7af2acada5b98ba1f
+SHA256sum: aebe526f3bb00ba21cc3ac1d24003f98417a13c171d21d2981c20012cfdb8605
+Size: 2293608
+Filename: enigma2-plugin-extensions-openwebif_1.5.2-git4670+68220730+6822073a07-r0_dm800se.ipk
 Source: enigma2-plugin-extensions-openwebif.bb
 Description: enigma2-plugin-extensions-openwebif version git-r0
 OE: enigma2-plugin-extensions-openwebif
 License: GPL-2.0-only
 Priority: optional
 
-Package: enigma2-plugin-extensions-pictureplayer-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
+Package: enigma2-plugin-extensions-screenposition-dbg
+Version: 2.0+git6+0b2e06b0+0b2e06b258-r1
+Section: devel
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 4dc5fef978bcbe8b6a2394960823f1d1
-SHA256sum: c12689b9cfbbb77bd44ab35b079a289089206e83e7304841d12ab63f630891c0
-Size: 7090
-Filename: enigma2-plugin-extensions-pictureplayer-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: extensions-pictureplayer (sources)
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: aa940e7642671c0fcaf8e0cb9a998da4
+SHA256sum: eca4a7c2bffc54e5a4950f8579ce8e1a22e898e7d7a20a17b80fa763cf9f5482
+Size: 624
+Filename: enigma2-plugin-extensions-screenposition-dbg_2.0+git6+0b2e06b0+0b2e06b258-r1_dm800se.ipk
+Source: enigma2-plugin-extensions-screenposition.bb
+Description: enigma2-plugin-extensions-screenposition version 2.0+git-r1 - Debugging files
+OE: enigma2-plugin-extensions-screenposition
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-extensions-pictureplayer
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
+Package: enigma2-plugin-extensions-screenposition-dev
+Version: 2.0+git6+0b2e06b0+0b2e06b258-r1
+Recommends: enigma2-plugin-extensions-screenposition (= 2.0+git6+0b2e06b0+0b2e06b258-r1), python3-core-dev, python3-dev
+Section: devel
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: cc95c95fd2e0fa4fdb7fd1e4b39a4708
-SHA256sum: f704de11a3b087928500ffb1e28e0eeb0655dbd430d6b2e00b3d8fac391e9991
-Size: 22618
-Filename: enigma2-plugin-extensions-pictureplayer_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: extensions-pictureplayer
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: b9c0baa7721a49235b5c4c2bae1c3f3a
+SHA256sum: 19cc9be98daef9c7b2823a40f73ff322a270b88dca4a53c49d7bcbcd68fe5895
+Size: 672
+Filename: enigma2-plugin-extensions-screenposition-dev_2.0+git6+0b2e06b0+0b2e06b258-r1_dm800se.ipk
+Source: enigma2-plugin-extensions-screenposition.bb
+Description: enigma2-plugin-extensions-screenposition version 2.0+git-r1 - Development files
+OE: enigma2-plugin-extensions-screenposition
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-extensions-socketmmi-dbg
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Recommends: freetype-dbg, fribidi-dbg, giflib-dbg, glib-2.0-dbg, glibc-dbg, libavahi-client-dbg, libavahi-common-dbg, libcrypto-dbg, libdreamdvd-dbg, libdvbsi++-dbg, libgcc-dbg, libgomp-dbg, libjpeg-turbo-dbg, libpng-dbg, libpython3-dbg, libsigc++-3-dbg, libssl-dbg, libstdc++-dbg, libtuxtxt-dbg, libudfread-dbg, libxcrypt-dbg, libxml2-dbg, tuxtxt-enigma2-dbg
-Section: base
+Package: enigma2-plugin-extensions-screenposition-src
+Version: 2.0+git6+0b2e06b0+0b2e06b258-r1
+Depends: enigma2-plugin-extensions-screenposition
+Section: devel
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: bcd7affcd50e7562de90882c8b76b808
-SHA256sum: 8a67efa2128e965a78f50b53af9be16d79d32873d0b59ad9723a216b941dcf28
-Size: 15154820
-Filename: enigma2-plugin-extensions-socketmmi-dbg_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: extensions-socketmmi (debug)
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: d7bc5536e5ac934b5d3f6db40093ad44
+SHA256sum: 92d809cade4acb705059199fb5f85fd8979edf666d6f95bfc07fd707aa1382e9
+Size: 2322
+Filename: enigma2-plugin-extensions-screenposition-src_2.0+git6+0b2e06b0+0b2e06b258-r1_dm800se.ipk
+Source: enigma2-plugin-extensions-screenposition.bb
+Description: enigma2-plugin-extensions-screenposition version 2.0+git-r1 - Source files
+OE: enigma2-plugin-extensions-screenposition
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-extensions-socketmmi-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
+Package: enigma2-plugin-extensions-screenposition
+Version: 2.0+git6+0b2e06b0+0b2e06b258-r1
+Depends: python3-core
+Replaces: enigma2-plugin-pli-screenposition
+Conflicts: enigma2-plugin-pli-screenposition
 Section: base
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 51ece49cadeb7a2d2ecdcce196fd6ed2
-SHA256sum: 131f87f737945baa2de2f7c63770a41ab9354e0a92ac48f9b9f693a020f6883f
-Size: 1496
-Filename: enigma2-plugin-extensions-socketmmi-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: extensions-socketmmi (sources)
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: c87118d28828bac2d30f1d4640ff138c
+SHA256sum: 6c292582d06c9fc458beb550ec839f60e6a8c992ff0352355984f723a879a9a0
+Size: 4724
+Filename: enigma2-plugin-extensions-screenposition_2.0+git6+0b2e06b0+0b2e06b258-r1_dm800se.ipk
+Source: enigma2-plugin-extensions-screenposition.bb
+Description: enigma2-plugin-extensions-screenposition version 2.0+git-r1
+OE: enigma2-plugin-extensions-screenposition
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-extensions-socketmmi-staticdev
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
+Package: enigma2-plugin-extensions-shootyourscreen-dbg
+Version: 0.2+git20+abd5cda0+abd5cda28c-r0
+Section: devel
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: ab1285ba0faafcf9dee356cae526600e
-SHA256sum: bb4cea6e8f5717645c678f1d9ceef55cc1def8f5b101a46be6ba21eaf411cb2f
-Size: 132068
-Filename: enigma2-plugin-extensions-socketmmi-staticdev_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: extensions-socketmmi (static development)
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 11de4bcec3421c75ac63352ae357be9b
+SHA256sum: 85be1415ee16173b02872f6a86c09c4b37dc8a7bfcf36aa0b1380981bcf132f0
+Size: 638
+Filename: enigma2-plugin-extensions-shootyourscreen-dbg_0.2+git20+abd5cda0+abd5cda28c-r0_dm800se.ipk
+Source: enigma2-plugin-extensions-shootyourscreen.bb
+Description: enigma2-plugin-extensions-shootyourscreen version 0.2+git-r0 - Debugging files
+OE: enigma2-plugin-extensions-shootyourscreen
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-extensions-socketmmi
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Depends: libc6 (>= 2.39+git0+662516aca8), libgcc1 (>= 13.3.0), libstdc++6 (>= 13.3.0), libudfread0 (>= 1.1.2-git108+b3e69360+b3e6936a23), libxml2 (>= 2.12.10)
-Section: base
+Package: enigma2-plugin-extensions-shootyourscreen-dev
+Version: 0.2+git20+abd5cda0+abd5cda28c-r0
+Recommends: aio-grab-dev, enigma2-plugin-extensions-shootyourscreen (= 0.2+git20+abd5cda0+abd5cda28c-r0), python3-core-dev, python3-dev
+Section: devel
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 4d7e7d0edc0170e1db34bd39fbf7bf97
-SHA256sum: 6f0dc1d8e48ee44daf8d63bf4c72ccfab7aedc82bd6a906685a7b4e1bff64f20
-Size: 14622
-Filename: enigma2-plugin-extensions-socketmmi_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: extensions-socketmmi
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: fb8d4914729b9e1729c1fe0caf40fc21
+SHA256sum: 658bab07b2a161b04624dcfc965df76dd86d1015e6fcb15cfaa2dec0832d1777
+Size: 696
+Filename: enigma2-plugin-extensions-shootyourscreen-dev_0.2+git20+abd5cda0+abd5cda28c-r0_dm800se.ipk
+Source: enigma2-plugin-extensions-shootyourscreen.bb
+Description: enigma2-plugin-extensions-shootyourscreen version 0.2+git-r0 - Development files
+OE: enigma2-plugin-extensions-shootyourscreen
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-systemplugins-cablescan-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
+Package: enigma2-plugin-extensions-shootyourscreen-src
+Version: 0.2+git20+abd5cda0+abd5cda28c-r0
+Depends: enigma2-plugin-extensions-shootyourscreen
+Section: devel
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 204eed72595c4859b0efbde5175104d0
-SHA256sum: bd005e58ea3b0450276c5b143c5870a2a01e1a7ff245f29f52faf333a7bcb268
-Size: 3850
-Filename: enigma2-plugin-systemplugins-cablescan-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-cablescan (sources)
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: a58ee305344883d1b9f7e423784819ab
+SHA256sum: 1c97433b8f39791033e1f980f381753a2bc105d9819ddc4d0c5dc5cec5da34fb
+Size: 4924
+Filename: enigma2-plugin-extensions-shootyourscreen-src_0.2+git20+abd5cda0+abd5cda28c-r0_dm800se.ipk
+Source: enigma2-plugin-extensions-shootyourscreen.bb
+Description: enigma2-plugin-extensions-shootyourscreen version 0.2+git-r0 - Source files
+OE: enigma2-plugin-extensions-shootyourscreen
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-systemplugins-cablescan
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
+Package: enigma2-plugin-extensions-shootyourscreen
+Version: 0.2+git20+abd5cda0+abd5cda28c-r0
+Depends: aio-grab, python3-core
 Section: base
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 85beb9dea76df1d9bc685d49114c4561
-SHA256sum: 868d651b9c97e7f6cb72b132de35cffaf69e9604baeda2230828570ec28d5ec2
-Size: 9536
-Filename: enigma2-plugin-systemplugins-cablescan_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-cablescan
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 350d6e8165e62ba3718f01125a3c66e0
+SHA256sum: 94194fe4724dbb6d132e3a2496859bddb9c4cb5dcdb14e0c4feb5189c2838e38
+Size: 15118
+Filename: enigma2-plugin-extensions-shootyourscreen_0.2+git20+abd5cda0+abd5cda28c-r0_dm800se.ipk
+Source: enigma2-plugin-extensions-shootyourscreen.bb
+Description: enigma2-plugin-extensions-shootyourscreen version 0.2+git-r0
+OE: enigma2-plugin-extensions-shootyourscreen
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-systemplugins-commoninterfaceassignment-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
+Package: enigma2-plugin-systemplugins-autoshutdown-dbg
+Version: 0.6+git41+16525340+1652534fc4-r0
+Section: devel
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: e290c9770fd24ee2c872c8edd4e3934e
-SHA256sum: 57988be4d31b20265e7b370fadca8cfa66b1516358984297dad750e7793e7849
-Size: 6956
-Filename: enigma2-plugin-systemplugins-commoninterfaceassignment-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-commoninterfaceassignment (sources)
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 06f584ac2dea97bb7953dcf654c5bc69
+SHA256sum: 4004cf7b5e791314ed9ecada30aea0a1102c5cbab40324d4538847843155ebdc
+Size: 632
+Filename: enigma2-plugin-systemplugins-autoshutdown-dbg_0.6+git41+16525340+1652534fc4-r0_dm800se.ipk
+Source: enigma2-plugin-systemplugins-autoshutdown.bb
+Description: enigma2-plugin-systemplugins-autoshutdown version 0.6+git-r0 - Debugging files
+OE: enigma2-plugin-systemplugins-autoshutdown
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-systemplugins-commoninterfaceassignment
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
+Package: enigma2-plugin-systemplugins-autoshutdown-dev
+Version: 0.6+git41+16525340+1652534fc4-r0
+Recommends: enigma2-plugin-systemplugins-autoshutdown (= 0.6+git41+16525340+1652534fc4-r0), python3-dev
+Section: devel
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: f22d9659e8204254103d62e8923608f3
-SHA256sum: 9befbba397e3939dbd02c5eb91fa13d29b8fefa6055fb910021b3de34b410abb
-Size: 17446
-Filename: enigma2-plugin-systemplugins-commoninterfaceassignment_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-commoninterfaceassignment
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 20d6898d2d550389039ce552cb8eef71
+SHA256sum: 27992e4debcb536167c345a1a308a86456d613786ea5593d2d1ea52a27410cb3
+Size: 672
+Filename: enigma2-plugin-systemplugins-autoshutdown-dev_0.6+git41+16525340+1652534fc4-r0_dm800se.ipk
+Source: enigma2-plugin-systemplugins-autoshutdown.bb
+Description: enigma2-plugin-systemplugins-autoshutdown version 0.6+git-r0 - Development files
+OE: enigma2-plugin-systemplugins-autoshutdown
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-systemplugins-defaultservicesscanner-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
+Package: enigma2-plugin-systemplugins-autoshutdown-src
+Version: 0.6+git41+16525340+1652534fc4-r0
+Depends: enigma2-plugin-systemplugins-autoshutdown
+Section: devel
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: cc92d5c1280895c80dc4c652a66b5ec3
-SHA256sum: b3f7b4d0c8c640bf4939812a386a7295fd59d6663b7790a055305e6112d24daa
-Size: 2610
-Filename: enigma2-plugin-systemplugins-defaultservicesscanner-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-defaultservicesscanner (sources)
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 7e1201db2e6de2f9bf3b525d7961b24e
+SHA256sum: 6696382771b5cf713ca850b84248f18451f8b810d79e2e6c7c207cfa8328f0e8
+Size: 6732
+Filename: enigma2-plugin-systemplugins-autoshutdown-src_0.6+git41+16525340+1652534fc4-r0_dm800se.ipk
+Source: enigma2-plugin-systemplugins-autoshutdown.bb
+Description: enigma2-plugin-systemplugins-autoshutdown version 0.6+git-r0 - Source files
+OE: enigma2-plugin-systemplugins-autoshutdown
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-systemplugins-defaultservicesscanner
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
+Package: enigma2-plugin-systemplugins-autoshutdown
+Version: 0.6+git41+16525340+1652534fc4-r0
 Section: base
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 4ddffedbbe735d50f64005fef4420466
-SHA256sum: 9be09972d156851586b854fc926146a1a3475336846a212508c3a8951c5e7657
-Size: 4738
-Filename: enigma2-plugin-systemplugins-defaultservicesscanner_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-defaultservicesscanner
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 5853240ffebe6641955c737bc780f509
+SHA256sum: 4a484d368ea0ddb1188fdbd5e5c4c1b63cb74af66691702681c40c4d4fdda35f
+Size: 31556
+Filename: enigma2-plugin-systemplugins-autoshutdown_0.6+git41+16525340+1652534fc4-r0_dm800se.ipk
+Source: enigma2-plugin-systemplugins-autoshutdown.bb
+Description: enigma2-plugin-systemplugins-autoshutdown version 0.6+git-r0
+OE: enigma2-plugin-systemplugins-autoshutdown
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-systemplugins-diseqctester-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
+Package: enigma2-plugin-systemplugins-satscan-dbg
+Version: 1.3+git0+97f6218061-r0
+Section: devel
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: cad576bf0bb6f06f6da374cd0df6a975
-SHA256sum: 157b03d48ef9f87e3395e64fa8a970386d7aecb383656e9a98be7834b765de79
-Size: 6764
-Filename: enigma2-plugin-systemplugins-diseqctester-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-diseqctester (sources)
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 7dc381d50fa3ba25dcb4b65b6a7af98f
+SHA256sum: d8808dcb8ef83a674501fd6866ea6051d1d291a8d09716db7fe4d699428d28a1
+Size: 618
+Filename: enigma2-plugin-systemplugins-satscan-dbg_1.3+git0+97f6218061-r0_dm800se.ipk
+Source: enigma2-plugin-systemplugins-satscan.bb
+Description: enigma2-plugin-systemplugins-satscan version 1.3+git-r0 - Debugging files
+OE: enigma2-plugin-systemplugins-satscan
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-systemplugins-diseqctester
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
+Package: enigma2-plugin-systemplugins-satscan-dev
+Version: 1.3+git0+97f6218061-r0
+Recommends: enigma2-plugin-systemplugins-satscan (= 1.3+git0+97f6218061-r0), python3-core-dev, python3-dev, virtual-blindscan-dvbs-dev
+Section: devel
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 755c90f67b18bda495fb9aeffad282fb
-SHA256sum: 6ca53589503473140217f83aded12140e5e7b293e0c564fa6e6ecc1b3da5f47a
-Size: 15906
-Filename: enigma2-plugin-systemplugins-diseqctester_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-diseqctester
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: f0b4fb259e2cebdf4e6dff36a4799b2b
+SHA256sum: 06d775d74ef626a76fc7f81ee58e8a291b07328a132a5ba8ba8d5be328a08d9c
+Size: 680
+Filename: enigma2-plugin-systemplugins-satscan-dev_1.3+git0+97f6218061-r0_dm800se.ipk
+Source: enigma2-plugin-systemplugins-satscan.bb
+Description: enigma2-plugin-systemplugins-satscan version 1.3+git-r0 - Development files
+OE: enigma2-plugin-systemplugins-satscan
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-systemplugins-fastchannelchange-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
+Package: enigma2-plugin-systemplugins-satscan-src
+Version: 1.3+git0+97f6218061-r0
+Depends: enigma2-plugin-systemplugins-satscan
+Section: devel
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: cc862f11a3c2038f3f17b94ff601170f
-SHA256sum: cb308f78ea1a168826d1dd9df7b5403260b3a6be0a187bb9f25a8d75cc98d50b
-Size: 5100
-Filename: enigma2-plugin-systemplugins-fastchannelchange-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-fastchannelchange (sources)
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: d5f3c991897317d2f05fca2a27b91898
+SHA256sum: 718884d4905dcec1ae06bdc68af754a6c59b84e3557d90a1061b9fde61dd24d8
+Size: 7008
+Filename: enigma2-plugin-systemplugins-satscan-src_1.3+git0+97f6218061-r0_dm800se.ipk
+Source: enigma2-plugin-systemplugins-satscan.bb
+Description: enigma2-plugin-systemplugins-satscan version 1.3+git-r0 - Source files
+OE: enigma2-plugin-systemplugins-satscan
+License: GPL-2.0-or-later
 Priority: optional
 
-Package: enigma2-plugin-systemplugins-fastchannelchange
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
+Package: enigma2-plugin-systemplugins-satscan
+Version: 1.3+git0+97f6218061-r0
+Depends: python3-core, virtual-blindscan-dvbs
 Section: base
 Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 833be5e5a166cb0d7559231e379008dd
-SHA256sum: 2f38642d293d034ef9d369f83952c7eacf30eb619cf4465ebd1c924546a4d78c
-Size: 12772
-Filename: enigma2-plugin-systemplugins-fastchannelchange_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-fastchannelchange
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-fastscan-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 4048f105d2034782be80782f703aa3c9
-SHA256sum: 5651cfecee2cc977c81a2c0cc7f431790c2c20b8f0f121b3c6bd53cf8b4e6dcd
-Size: 5238
-Filename: enigma2-plugin-systemplugins-fastscan-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-fastscan (sources)
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-fastscan
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 7fd9642ea782bf69aff2cd9a8bb89ca4
-SHA256sum: 8db707f89ad306382f99016a76d3a22e08d014ac187fba9f41e2aa8c3ad244c1
-Size: 13340
-Filename: enigma2-plugin-systemplugins-fastscan_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-fastscan
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-hdmicec-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 407a32c3bc96b3af8000aaf4086994a1
-SHA256sum: d7169a6301a4abf362ab4037674c10a3b000ae84efa6a737a0b835966b785663
-Size: 3524
-Filename: enigma2-plugin-systemplugins-hdmicec-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-hdmicec (sources)
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-hdmicec
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 11223cacb7a4825418c72940b9f516b0
-SHA256sum: 1236ee0db897586fbb20e9a398907d58215d8a371ff4f78a63f5e650549cf75c
-Size: 7280
-Filename: enigma2-plugin-systemplugins-hdmicec_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-hdmicec
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-hotplug-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 56ee7bf171419d4bed368078ee722dce
-SHA256sum: cc1d41ee95dfb31acdfdd6d3cbbd52ea052c1b1e3dd11be8cbe74315b4cd965e
-Size: 3116
-Filename: enigma2-plugin-systemplugins-hotplug-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-hotplug (sources)
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-hotplug
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Depends: hotplug-e2-helper
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: ae5bd0e5917a54c94fe5cea50ae0f4e0
-SHA256sum: 96abe155d47df8dea5f24c90f8c4bf8b1a1d71d9d2709f3d9c81e368466a0730
-Size: 6078
-Filename: enigma2-plugin-systemplugins-hotplug_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-hotplug
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-networkwizard-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 6f10cd5b60151df6e3f6599b80cdf80a
-SHA256sum: 4499c90da730f9d080289bba8d9dfadc8f40abe663b32e0aebf12b75c9966c49
-Size: 4568
-Filename: enigma2-plugin-systemplugins-networkwizard-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-networkwizard (sources)
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-networkwizard
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: a9c533e5fbed6d784babe22b13bea831
-SHA256sum: 935023fa4c4be3e1a4e1eb9a0f8a081dc159f34fdf2b8bdf375ea8a4c1b25a17
-Size: 11844
-Filename: enigma2-plugin-systemplugins-networkwizard_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-networkwizard
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-osd3dsetup-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: f9860d1283d0241618f702e2abfa55a0
-SHA256sum: cb1d801af1467aa5a820add0d66766369871237ca242faed1d66e2656fdc25d1
-Size: 2480
-Filename: enigma2-plugin-systemplugins-osd3dsetup-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-osd3dsetup (sources)
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-osd3dsetup
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 10aff1db99bc0272468bedf2c0384ee3
-SHA256sum: 6c9acbfcc5609664c3f5d7fda098d83083d96c4cc19023d3195826d940a74f5d
-Size: 5534
-Filename: enigma2-plugin-systemplugins-osd3dsetup_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-osd3dsetup
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-osdpositionsetup-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: dd6ff106d058ce610e5a224a2a1a69a7
-SHA256sum: 83bb92a7537a548c174f6df7fe394930dc006bfb2b7e4ce503ceac56f4cf0f8c
-Size: 4066
-Filename: enigma2-plugin-systemplugins-osdpositionsetup-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-osdpositionsetup (sources)
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-osdpositionsetup
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 8385a768ea769eb2bc76302603d0c2b6
-SHA256sum: db381955fd9e5de900c4081b168c4f076e5543ec9aebc1c6631fc528affa8533
-Size: 8566
-Filename: enigma2-plugin-systemplugins-osdpositionsetup_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-osdpositionsetup
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-positionersetup-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: f1c33c69931d933f54be41530afd1e1f
-SHA256sum: 444b805a0eb5d90d676a9745df0050d2007c90e70b8015c15ea55a3f62496ce6
-Size: 17956
-Filename: enigma2-plugin-systemplugins-positionersetup-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-positionersetup (sources)
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-positionersetup
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: d410f51c2073e92e45527ee37ed180de
-SHA256sum: 853555a942d719768bbefc09c2c89613aa23d4308cebebfcf59b356e5b1d55bb
-Size: 46636
-Filename: enigma2-plugin-systemplugins-positionersetup_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-positionersetup
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-satelliteequipmentcontrol-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 47c44d893094064229abcd15cf811782
-SHA256sum: 4fde3624ab074706ca62864fcb7080e3d7f3f27a6a5a3068b2abb17806ddc535
-Size: 2066
-Filename: enigma2-plugin-systemplugins-satelliteequipmentcontrol-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-satelliteequipmentcontrol (sources)
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-satelliteequipmentcontrol
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 835e8dfe77287ce036faa396a385efe2
-SHA256sum: 579691ad65b9d39e312844d94f8fa56d89ae43cebf50e3663a33741f7558c1aa
-Size: 3928
-Filename: enigma2-plugin-systemplugins-satelliteequipmentcontrol_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-satelliteequipmentcontrol
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-satfinder-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 90be8c20783c497b5e7e67687ff2de85
-SHA256sum: 164fb75c40f197d7b893fbc2154d24768370559ed6560802db7dc095e8b29a25
-Size: 6920
-Filename: enigma2-plugin-systemplugins-satfinder-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-satfinder (sources)
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-satfinder
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 6b63a09d756a47218622f419e4043d25
-SHA256sum: f141a404d6344ff7ca28e60525a80ba959dede0f0ec6989bba1bc8800bc522ca
-Size: 16754
-Filename: enigma2-plugin-systemplugins-satfinder_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-satfinder
-OE: enigma2
-License: GPL-2.0-only
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 0ab65fd7140196f31cfc14b910e5e03e
+SHA256sum: 23b818281f4dfefa4882e94556794640cb2b2e9ba3d73ae6c58b2e038bbeaf3a
+Size: 15564
+Filename: enigma2-plugin-systemplugins-satscan_1.3+git0+97f6218061-r0_dm800se.ipk
+Source: enigma2-plugin-systemplugins-satscan.bb
+Description: enigma2-plugin-systemplugins-satscan version 1.3+git-r0
+OE: enigma2-plugin-systemplugins-satscan
+License: GPL-2.0-or-later
 Priority: optional
 
 Package: enigma2-plugin-systemplugins-serviceapp-dbg
@@ -1349,13 +986,13 @@ Priority: optional
 
 Package: enigma2-plugin-systemplugins-serviceapp
 Version: 1+git176+947f62e0+947f62ed5c-r0
-Depends: enigma2, libc6 (>= 2.39+git0+662516aca8), libcrypto3 (>= 3.2.4), libgcc1 (>= 13.3.0), libssl3 (>= 3.2.4), libstdc++6 (>= 13.3.0), openssl, python3-json, uchardet (>= 0.0.8)
+Depends: enigma2, libc6 (>= 2.39+git0+3463100f2d), libcrypto3 (>= 3.2.4), libgcc1 (>= 13.3.0), libssl3 (>= 3.2.4), libstdc++6 (>= 13.3.0), openssl, python3-json, uchardet (>= 0.0.8)
 Recommends: exteplayer3, gstplayer
 Section: base
 Architecture: dm800se
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-MD5Sum: a0f467c15de3219e6e0297bcc6fef310
-SHA256sum: ca167364f6c1fdae6012382fb27bc0c3a435777a7419d5ca8a71e6d497a0c6c4
+MD5Sum: cafd0522f0530905e62cddcdeb798089
+SHA256sum: 5c77a3a8276c8fbbbb0ca2cbd63dd86f018244cf4c845a25299c2d6d2ccb7b63
 Size: 135102
 Filename: enigma2-plugin-systemplugins-serviceapp_1+git176+947f62e0+947f62ed5c-r0_dm800se.ipk
 Source: enigma2-plugin-systemplugins-serviceapp.bb
@@ -1413,281 +1050,19 @@ Priority: optional
 
 Package: enigma2-plugin-systemplugins-servicemp3
 Version: git73+bdb5a900+bdb5a90827-r0
-Depends: enigma2, glib-networking, gstreamer1.0 (>= 1.26.0), gstreamer1.0-plugin-subsink, gstreamer1.0-plugins-bad-autoconvert, gstreamer1.0-plugins-bad-dash, gstreamer1.0-plugins-bad-faad, gstreamer1.0-plugins-bad-hls, gstreamer1.0-plugins-bad-mpegpsdemux, gstreamer1.0-plugins-bad-mpegtsdemux, gstreamer1.0-plugins-bad-opusparse, gstreamer1.0-plugins-bad-rtmp, gstreamer1.0-plugins-bad-smoothstreaming, gstreamer1.0-plugins-bad-videoparsersbad, gstreamer1.0-plugins-base-alsa, gstreamer1.0-plugins-base-app, gstreamer1.0-plugins-base-audioconvert, gstreamer1.0-plugins-base-audiorate, gstreamer1.0-plugins-base-audioresample, gstreamer1.0-plugins-base-ogg, gstreamer1.0-plugins-base-opus, gstreamer1.0-plugins-base-playback, gstreamer1.0-plugins-base-rawparse, gstreamer1.0-plugins-base-subparse, gstreamer1.0-plugins-base-typefindfunctions, gstreamer1.0-plugins-base-videoconvertscale, gstreamer1.0-plugins-base-vorbis, gstreamer1.0-plugins-good-amrnb, gstreamer1.0-plugins-good-amrwbdec, gstreamer1.0-plugins-good-apetag, gstreamer1.0-plugins-good-audioparsers, gstreamer1.0-plugins-good-autodetect, gstreamer1.0-plugins-good-avi, gstreamer1.0-plugins-good-flac, gstreamer1.0-plugins-good-flv, gstreamer1.0-plugins-good-icydemux, gstreamer1.0-plugins-good-id3demux, gstreamer1.0-plugins-good-isomp4, gstreamer1.0-plugins-good-matroska, gstreamer1.0-plugins-good-mpg123, gstreamer1.0-plugins-good-rtp, gstreamer1.0-plugins-good-rtpmanager, gstreamer1.0-plugins-good-rtsp, gstreamer1.0-plugins-good-soup, gstreamer1.0-plugins-good-udp, gstreamer1.0-plugins-good-wavparse, gstreamer1.0-plugins-ugly-asf, gstreamer1.0-plugins-ugly-cdio, gstreamer1.0-plugins-ugly-dvdsub, libc6 (>= 2.39+git0+662516aca8), libgcc1 (>= 13.3.0), libglib-2.0-0 (>= 2.84.0), libgstaudio-1.0-0 (>= 1.26.0), libgstpbutils-1.0-0 (>= 1.26.0), libgstvideo-1.0-0 (>= 1.26.0), libsoup-2.4, libstdc++6 (>= 13.3.0), virtual-gstreamer1.0-dvbmediasink
+Depends: enigma2, glib-networking, gstreamer1.0 (>= 1.26.1), gstreamer1.0-plugin-subsink, gstreamer1.0-plugins-bad-autoconvert, gstreamer1.0-plugins-bad-dash, gstreamer1.0-plugins-bad-faad, gstreamer1.0-plugins-bad-hls, gstreamer1.0-plugins-bad-mpegpsdemux, gstreamer1.0-plugins-bad-mpegtsdemux, gstreamer1.0-plugins-bad-opusparse, gstreamer1.0-plugins-bad-rtmp, gstreamer1.0-plugins-bad-smoothstreaming, gstreamer1.0-plugins-bad-videoparsersbad, gstreamer1.0-plugins-base-alsa, gstreamer1.0-plugins-base-app, gstreamer1.0-plugins-base-audioconvert, gstreamer1.0-plugins-base-audiorate, gstreamer1.0-plugins-base-audioresample, gstreamer1.0-plugins-base-ogg, gstreamer1.0-plugins-base-opus, gstreamer1.0-plugins-base-playback, gstreamer1.0-plugins-base-rawparse, gstreamer1.0-plugins-base-subparse, gstreamer1.0-plugins-base-typefindfunctions, gstreamer1.0-plugins-base-videoconvertscale, gstreamer1.0-plugins-base-vorbis, gstreamer1.0-plugins-good-amrnb, gstreamer1.0-plugins-good-amrwbdec, gstreamer1.0-plugins-good-apetag, gstreamer1.0-plugins-good-audioparsers, gstreamer1.0-plugins-good-autodetect, gstreamer1.0-plugins-good-avi, gstreamer1.0-plugins-good-flac, gstreamer1.0-plugins-good-flv, gstreamer1.0-plugins-good-icydemux, gstreamer1.0-plugins-good-id3demux, gstreamer1.0-plugins-good-isomp4, gstreamer1.0-plugins-good-matroska, gstreamer1.0-plugins-good-mpg123, gstreamer1.0-plugins-good-rtp, gstreamer1.0-plugins-good-rtpmanager, gstreamer1.0-plugins-good-rtsp, gstreamer1.0-plugins-good-soup, gstreamer1.0-plugins-good-udp, gstreamer1.0-plugins-good-wavparse, gstreamer1.0-plugins-ugly-asf, gstreamer1.0-plugins-ugly-cdio, gstreamer1.0-plugins-ugly-dvdsub, libc6 (>= 2.39+git0+3463100f2d), libgcc1 (>= 13.3.0), libglib-2.0-0 (>= 2.84.0), libgstaudio-1.0-0 (>= 1.26.1), libgstpbutils-1.0-0 (>= 1.26.1), libgstvideo-1.0-0 (>= 1.26.1), libsoup-2.4, libstdc++6 (>= 13.3.0), virtual-gstreamer1.0-dvbmediasink
 Provides: virtual-enigma2-mediaservice
 Recommends: gstreamer1.0-plugins-good-pulse
 Section: base
 Architecture: dm800se
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-MD5Sum: 47bfa65edc194553d11cae52ec5d4bcc
-SHA256sum: 3ecdcd4d325501de12de3f7d8635dee77f2da4821649953296df07875c10b9d7
-Size: 67896
+MD5Sum: 38cbb8aac4aadea4e8788f97d9589e23
+SHA256sum: 01d20c23fe28393bcd01808589232c9895a1b874c7c99919201df47974f195ce
+Size: 67894
 Filename: enigma2-plugin-systemplugins-servicemp3_git73+bdb5a900+bdb5a90827-r0_dm800se.ipk
 Source: enigma2-plugin-systemplugins-servicemp3.bb
 Description: enigma2-plugin-systemplugins-servicemp3 version git-r0
 OE: enigma2-plugin-systemplugins-servicemp3
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-softwaremanager-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 72f3ea4dd5d5eaff9287045ed77bd716
-SHA256sum: 37a3a9993bc2efd6b2a534105f4ac81e2cfab5a496b5983b1fdcc9e8c32da153
-Size: 19032
-Filename: enigma2-plugin-systemplugins-softwaremanager-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-softwaremanager (sources)
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-softwaremanager
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Depends: python3-twisted-web
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: a072137d99a2c5c9eb322b2cc895a0b4
-SHA256sum: cf7bb732231bcfc352577f6e96475443d502ce5988f495ddf03fe3bb4c77673f
-Size: 67054
-Filename: enigma2-plugin-systemplugins-softwaremanager_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-softwaremanager
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-tempfancontrol-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 52ab8511b0f43b43c0dab9e8f8687248
-SHA256sum: cb8ba0ba7b71a00db271af709d3f2da966594b3e4a5667b540e553644fe41ea1
-Size: 2366
-Filename: enigma2-plugin-systemplugins-tempfancontrol-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-tempfancontrol (sources)
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-tempfancontrol
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 37fba8ad5c03d0390133fccd436197fe
-SHA256sum: a2fd5b2f0efeda7947a5ace85974401ee48766af3ef2e2e0dc83d355024d2867
-Size: 4292
-Filename: enigma2-plugin-systemplugins-tempfancontrol_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-tempfancontrol
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-videoclippingsetup-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: b9005477f14b9b5ffc4e2b5d9ac86cc7
-SHA256sum: 5c3b1b04cc9c9d25675e4b66dc085418cf6e7516eedf549ed8e5ea42ce7ed0c3
-Size: 2252
-Filename: enigma2-plugin-systemplugins-videoclippingsetup-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-videoclippingsetup (sources)
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-videoclippingsetup
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: d91b95db26a9081b386d838697160ff6
-SHA256sum: c0960658d9da23936bf6806686b6893defbc197a157efaa6202312f5a8ad87d0
-Size: 4798
-Filename: enigma2-plugin-systemplugins-videoclippingsetup_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-videoclippingsetup
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-videoenhancement-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 2c2615a2e598adeddd23cb2ba80a0af7
-SHA256sum: 79d34e43dcb554d42b517b07fdac55527bb31e55520ee751b2d54f3d4465e22b
-Size: 5880
-Filename: enigma2-plugin-systemplugins-videoenhancement-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-videoenhancement (sources)
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-videoenhancement
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 098015e5787342fa0eacaa7012de49fa
-SHA256sum: c2f1ce05f3e5319dc4104f64ad519dde97eb8858df9a702c7f31137e3fe6acfa
-Size: 14990
-Filename: enigma2-plugin-systemplugins-videoenhancement_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-videoenhancement
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-videomode-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 87f490a6f2875e3441541e0b116f81e8
-SHA256sum: b585b94573a176a3bcb6cccafa7482a842cc534d7919f0889ccc683fc4a464fe
-Size: 9544
-Filename: enigma2-plugin-systemplugins-videomode-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-videomode (sources)
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-videomode
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 121b1ccb6826ea590d647757a5f79ff4
-SHA256sum: 4de23f2227986895fe604af42f4b250db2f4c0ee11cc6f77f1f711ae4e98e901
-Size: 69508
-Filename: enigma2-plugin-systemplugins-videomode_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-videomode
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-videotune-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: df0655dfd53e7fccc491505bc389060e
-SHA256sum: 7732f80ee38408364144b57abe5039ca0273caa20e8d92e3faa243b36d3607dc
-Size: 4880
-Filename: enigma2-plugin-systemplugins-videotune-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-videotune (sources)
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-videotune
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 3e22b29334f35a00ff35881fcf3bc884
-SHA256sum: 516167f04f6b38a1bdd1c1b498d368d2d9cc14cfd16fb3dda9d93d0994c7e0bb
-Size: 71948
-Filename: enigma2-plugin-systemplugins-videotune_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-videotune
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-wirelesslan-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 86c034c010ac0e423ad94660f0ea6773
-SHA256sum: 96d68e372c81b38840d4f6fd3b9750f7859431677049762f66e557a76129bf75
-Size: 8418
-Filename: enigma2-plugin-systemplugins-wirelesslan-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-wirelesslan (sources)
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-plugin-systemplugins-wirelesslan
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Depends: python3-wifi, wireless-tools, wpa-supplicant
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: b02b40808a9ac51ce00074dc7c6b297a
-SHA256sum: d8dbe754b1d3413b006a2931fe280b2e5438d91bfbe242495f86ac00bb25b455
-Size: 19888
-Filename: enigma2-plugin-systemplugins-wirelesslan_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: systemplugins-wirelesslan
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-src
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Section: devel
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: bb0132049dfd096c2520c9adc09471da
-SHA256sum: 8c2868d101e06057516990f5fffcb89c85f127e4936ed3d4a0e95519ca057b6d
-Size: 606812
-Filename: enigma2-src_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: GUI frontend for Open Source Linux based receivers - Source files
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2-staticdev
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Depends: enigma2-dev (= 3.12+git22002+b3fe3ba0+b3fe3ba053-r0)
-Section: devel
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 12c191f3df341cfe9e07a9a0b131ffdb
-SHA256sum: 1b4a61a46b9bfea83f7ce2cf29e717ecd3f322b82aa907692ec8c1ba5d70bcbf
-Size: 7568
-Filename: enigma2-staticdev_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: GUI frontend for Open Source Linux based receivers - Development files (Static Libraries)
-OE: enigma2
-License: GPL-2.0-only
-Priority: optional
-
-Package: enigma2
-Version: 3.12+git22002+b3fe3ba0+b3fe3ba053-r0
-Depends: alsa-conf, enigma-info, enigma2-fonts, enigma2-timezones, ethtool, font-valis-enigma, glibc-gconv-cp1250, glibc-gconv-iso8859-15, libavahi-client3 (>= 0.8), libavahi-common3 (>= 0.8), libc6 (>= 2.39+git0+662516aca8), libcrypt2 (>= 4.4.36), libcrypto3 (>= 3.2.4), libdreamdvd0 (>= 1.0+git217+02a0e7c0+02a0e7cb0c), libdvbsi++1 (>= 0.3.9+git130+f3c40ea0+f3c40ea6da), libfreetype6 (>= 2.13.2), libfribidi0 (>= 1.0.14), libgcc1 (>= 13.3.0), libgif7 (>= 5.2.2), libglib-2.0-0 (>= 2.84.0), libgomp1 (>= 13.3.0), libjpeg62 (>= 3.0.1), libpng16-16 (>= 1.6.42), libpython3.12-1.0 (>= 3.12.9), libsigc-3.0-0 (>= 3.6.0), libssl3 (>= 3.2.4), libstdc++6 (>= 13.3.0), libtuxtxt0 (>= 2.0+git82+14027950+1402795d66), libtuxtxt32bpp0 (>= 2.0+git82+14027950+1402795d66), libudfread0 (>= 1.1.2-git108+b3e69360+b3e6936a23), libxml2 (>= 2.12.10), oe-alliance-branding, python3-codecs, python3-core, python3-crypt, python3-fcntl, python3-logging, python3-mmap, python3-netclient, python3-netifaces, python3-netserver, python3-numbers, python3-pickle, python3-shell, python3-threading, python3-twisted-core, python3-twisted-web, python3-urllib3, python3-xml, python3-zopeinterface, virtual-blindscan-dvbc
-Replaces: enigma2-plugin-pli-softcamsetup, enigma2-plugin-systemplugins-skinselector, enigma2-plugin-systemplugins-systemtime
-Conflicts: enigma2-plugin-pli-softcamsetup, enigma2-plugin-systemplugins-skinselector, enigma2-plugin-systemplugins-systemtime
-Recommends: enigma2-plugin-skins-e2darkos, enigma2-plugin-skins-pd1loi-hd-night, enigma2-plugin-skins-pli-fullnight-hd, enigma2-plugin-skins-pli-hd, enigma2-plugin-skins-pli-hd-fullnight, glibc-gconv-utf-16, hotplug-e2-helper, libdvdcss, ofgwrite, python3-sendfile, virtual-enigma2-mediaservice
-Section: base
-Architecture: dm800se
-Maintainer: OpenPLi team <info@openpli.org>
-MD5Sum: 26a0d9b97dd9d256c600e326877a6fdf
-SHA256sum: 317dce1f72e9b366dd7798bb69fcd421fde9765eaeca931731e1ffebc5fceea5
-Size: 8543026
-Filename: enigma2_3.12+git22002+b3fe3ba0+b3fe3ba053-r0_dm800se.ipk
-Source: enigma2.bb
-Description: GUI frontend for Open Source Linux based receivers
-OE: enigma2
 License: GPL-2.0-only
 Priority: optional
 
@@ -1741,15 +1116,15 @@ Priority: optional
 
 Package: gstreamer1.0-plugin-dvbmediasink
 Version: 1.0+git95+1d197310+1d19731383-r0
-Depends: gstreamer1.0 (>= 1.26.0), libc6 (>= 2.39+git0+662516aca8), libdca (>= 0.0.7-git111+95c4bd80+95c4bd8bae), libglib-2.0-0 (>= 2.84.0)
+Depends: gstreamer1.0 (>= 1.26.1), libc6 (>= 2.39+git0+3463100f2d), libdca (>= 0.0.7-git111+95c4bd80+95c4bd8bae), libglib-2.0-0 (>= 2.84.0)
 Provides: gst-plugin-dvbmediasink, virtual-gstreamer1.0-dvbmediasink
 Replaces: gst-plugin-dvbmediasink
 Conflicts: gst-plugin-dvbmediasink
 Section: multimedia
 Architecture: dm800se
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-MD5Sum: 6f5ec7f97a6fdd07c08bd12bc997ba5a
-SHA256sum: fbfcf00dd1a2f4c6a95aeff266486bb279effef2ffd71760182082a4b1781c26
+MD5Sum: fbf1a554afa3851ea813afb2b8adca46
+SHA256sum: acd0d0b42e7078ae498829205a208530ab100de3b5caf388325c3f74b34db5f6
 Size: 37564
 Filename: gstreamer1.0-plugin-dvbmediasink_1.0+git95+1d197310+1d19731383-r0_dm800se.ipk
 Source: gstreamer1.0-plugin-dvbmediasink.bb
@@ -1848,9 +1223,9 @@ Recommends: kernel-3.2-dm800se-dev, kernel-base-dev, kernel-image-vmlinux-dev, k
 Section: kernel
 Architecture: dm800se
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-MD5Sum: 2a83d7b67f489696905a04d70ed5d63f
-SHA256sum: 53d9ea011cf07d05c5da0b2194396efa5ed439661e02a9e3101de7cde70c9ed1
-Size: 344472
+MD5Sum: dd327b7d1feac2a36b726dc99826676f
+SHA256sum: abb072b899f122009242346eba3fe102071e76740a49b116fad5e4d122835f69
+Size: 344406
 Filename: kernel-dev_3.2-.7_dm800se.ipk
 Source: linux-dreambox_3.2.bb
 Description: Linux kernel for dm800se
@@ -2259,6 +1634,143 @@ Source: kernel-module-8192eu.bb
 Description: Driver for Realtek USB wireless device 8192eu
 OE: kernel-module-8192eu
 HomePage: http://www.realtek.com/
+License: GPL-2.0-only
+Priority: optional
+
+Package: kernel-module-8821cu-3.2-dm800se
+Version: 5.8.1-r0
+Depends: kernel-3.2-dm800se, kernel-module-cfg80211-3.2-dm800se
+Provides: kernel-module-8821cu
+Section: kernel/modules
+Architecture: dm800se
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 9d610fed975fae62344f33d86ba19846
+SHA256sum: 827b1c4c8b4c7b0fb8f79a1e066ce788917d3abc0bddea3bb0b2c660aef55bcf
+Size: 1210492
+Filename: kernel-module-8821cu-3.2-dm800se_5.8.1-r0_dm800se.ipk
+Source: kernel-module-8821cu_5.8.1.bb
+Description: 8821cu kernel module
+OE: kernel-module-8821cu
+HomePage: http://www.realtek.com.tw
+License: GPL-2.0-only
+Priority: optional
+
+Package: kernel-module-8821cu-dbg
+Version: 5.8.1-r0
+Section: devel
+Architecture: dm800se
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: b2ad3e0bb932eb9abae98b34a5fa9d1e
+SHA256sum: d79e08a65151cdb7896cf0a741d683d45b51a164bbd9d6f19a0482e80311354a
+Size: 496174
+Filename: kernel-module-8821cu-dbg_5.8.1-r0_dm800se.ipk
+Source: kernel-module-8821cu_5.8.1.bb
+Description: Drivers for Realtek 8821CU/8811CU - Debugging files
+OE: kernel-module-8821cu
+HomePage: http://www.realtek.com.tw
+License: GPL-2.0-only
+Priority: optional
+
+Package: kernel-module-8821cu-dev
+Version: 5.8.1-r0
+Recommends: kernel-3.2-dm800se-dev, kernel-module-8821cu (= 5.8.1-r0), kernel-module-8821cu-3.2-dm800se-dev, kernel-module-cfg80211-3.2-dm800se-dev
+Section: devel
+Architecture: dm800se
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: e76f78a74edca9156a2ef76197698c3a
+SHA256sum: 281180ecda80084cfc694ceb1bfe90ac69e2128c71f75eb8ba5c4de18cecc803
+Size: 682
+Filename: kernel-module-8821cu-dev_5.8.1-r0_dm800se.ipk
+Source: kernel-module-8821cu_5.8.1.bb
+Description: Drivers for Realtek 8821CU/8811CU - Development files
+OE: kernel-module-8821cu
+HomePage: http://www.realtek.com.tw
+License: GPL-2.0-only
+Priority: optional
+
+Package: kernel-module-8821cu
+Version: 5.8.1-r0
+Depends: kernel-module-8821cu-3.2-dm800se
+Section: kernel/modules
+Architecture: dm800se
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 5a144deb81240dfa70614f296fc9d71d
+SHA256sum: 0333f0338673f89c61834a6d89abbc719a26cbb20bdcc953532d4dfd31dd0de2
+Size: 580
+Filename: kernel-module-8821cu_5.8.1-r0_dm800se.ipk
+Source: kernel-module-8821cu_5.8.1.bb
+Description: Drivers for Realtek 8821CU/8811CU
+OE: kernel-module-8821cu
+HomePage: http://www.realtek.com.tw
+License: GPL-2.0-only
+Priority: optional
+
+Package: kernel-module-88x2bu-3.2-dm800se
+Version: 5.6.1-r0
+Depends: kernel-3.2-dm800se, kernel-module-cfg80211-3.2-dm800se
+Provides: kernel-module-88x2bu
+Section: kernel/modules
+Architecture: dm800se
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: b7c9fdb59858de22805a93eb96ade3fa
+SHA256sum: 502bbffbde28c7c59ccda51153e38ea73a0aeece2c9d51e6913685c1597a6d87
+Size: 1002126
+Filename: kernel-module-88x2bu-3.2-dm800se_5.6.1-r0_dm800se.ipk
+Source: kernel-module-88x2bu_5.6.1.bb
+Description: 88x2bu kernel module
+OE: kernel-module-88x2bu
+HomePage: http://www.realtek.com.tw
+License: GPL-2.0-only
+Priority: optional
+
+Package: kernel-module-88x2bu-dbg
+Version: 5.6.1-r0
+Section: devel
+Architecture: dm800se
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 6639233a9905a2cf2ccf896059552e2c
+SHA256sum: 39dc297638cb203c67fec262be7163a4bbf58621e60230de4c29e45b9063ad41
+Size: 365494
+Filename: kernel-module-88x2bu-dbg_5.6.1-r0_dm800se.ipk
+Source: kernel-module-88x2bu_5.6.1.bb
+Description: Ralink 88x2BU v5.6.1 - Debugging files
+OE: kernel-module-88x2bu
+HomePage: http://www.realtek.com.tw
+License: GPL-2.0-only
+Priority: optional
+
+Package: kernel-module-88x2bu-dev
+Version: 5.6.1-r0
+Recommends: kernel-3.2-dm800se-dev, kernel-module-88x2bu (= 5.6.1-r0), kernel-module-88x2bu-3.2-dm800se-dev, kernel-module-cfg80211-3.2-dm800se-dev
+Section: devel
+Architecture: dm800se
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 0e6cc5b8ca71a3f2a20aa8e2420b7eaf
+SHA256sum: fc22e8492a462f37ae24354b369edab00035d396f778a060d340b80960beed9c
+Size: 674
+Filename: kernel-module-88x2bu-dev_5.6.1-r0_dm800se.ipk
+Source: kernel-module-88x2bu_5.6.1.bb
+Description: Ralink 88x2BU v5.6.1 - Development files
+OE: kernel-module-88x2bu
+HomePage: http://www.realtek.com.tw
+License: GPL-2.0-only
+Priority: optional
+
+Package: kernel-module-88x2bu
+Version: 5.6.1-r0
+Depends: kernel-module-88x2bu-3.2-dm800se
+Provides: rtl8822bu
+Section: kernel/modules
+Architecture: dm800se
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 64507ff404b3ded39ae71ea6955cc0f3
+SHA256sum: 48ef04ef72094add0f991111f1f2a74e1b75f8c4af7969b41d37609f3f1debd3
+Size: 584
+Filename: kernel-module-88x2bu_5.6.1-r0_dm800se.ipk
+Source: kernel-module-88x2bu_5.6.1.bb
+Description: Ralink 88x2BU v5.6.1
+OE: kernel-module-88x2bu
+HomePage: http://www.realtek.com.tw
 License: GPL-2.0-only
 Priority: optional
 
@@ -8059,6 +7571,74 @@ OE: linux-dreambox
 License: GPL-2.0-only
 Priority: optional
 
+Package: kernel-module-r8723bs-3.2-dm800se
+Version: 4.4.1-3.2-r0
+Depends: kernel-3.2-dm800se, kernel-module-cfg80211-3.2-dm800se
+Provides: kernel-module-r8723bs
+Section: kernel/modules
+Architecture: dm800se
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 7ceee1ed8e21452b04ac212bc445da8a
+SHA256sum: c8b7a70d2405fb5b47c785284ec1a941ca55cf8636c897a98b8f51174bd82e05
+Size: 665892
+Filename: kernel-module-r8723bs-3.2-dm800se_4.4.1-3.2-r0_dm800se.ipk
+Source: kernel-module-r8723bs_4.4.1.bb
+Description: r8723bs kernel module
+OE: kernel-module-r8723bs
+HomePage: http://www.realtek.com/
+License: GPL-2.0-only
+Priority: optional
+
+Package: kernel-module-r8723bs-dbg
+Version: 4.4.1-3.2-r0
+Section: devel
+Architecture: dm800se
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 804abadfd665bc1d9ac46ed72634a17e
+SHA256sum: 8282c3c8c0ee8ee5d283f9dfea93fc894e89603fe03355b74e4102eb54922e66
+Size: 243798
+Filename: kernel-module-r8723bs-dbg_4.4.1-3.2-r0_dm800se.ipk
+Source: kernel-module-r8723bs_4.4.1.bb
+Description: Driver for Realtek 8723BS wireless/bluetooth devices - Debugging files
+OE: kernel-module-r8723bs
+HomePage: http://www.realtek.com/
+License: GPL-2.0-only
+Priority: optional
+
+Package: kernel-module-r8723bs-dev
+Version: 4.4.1-3.2-r0
+Recommends: kernel-3.2-dm800se-dev, kernel-module-cfg80211-3.2-dm800se-dev, kernel-module-r8723bs (= 4.4.1-3.2-r0), kernel-module-r8723bs-3.2-dm800se-dev
+Section: devel
+Architecture: dm800se
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 6435cb94c6cd0ffc2a043ccd4d98a79e
+SHA256sum: 68ebb21ac8837126b924acb63abb523c8da917621db465ee8ae2ab51736aaee0
+Size: 700
+Filename: kernel-module-r8723bs-dev_4.4.1-3.2-r0_dm800se.ipk
+Source: kernel-module-r8723bs_4.4.1.bb
+Description: Driver for Realtek 8723BS wireless/bluetooth devices - Development files
+OE: kernel-module-r8723bs
+HomePage: http://www.realtek.com/
+License: GPL-2.0-only
+Priority: optional
+
+Package: kernel-module-r8723bs
+Version: 4.4.1-3.2-r0
+Depends: kernel-module-r8723bs-3.2-dm800se
+Section: kernel/modules
+Architecture: dm800se
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: 4ce8d15477d51a824374c0c88dd3dd5b
+SHA256sum: ac2314386578c25bed2c2a67af6a9141dc240abe65996cb0ab137f7e130e3f06
+Size: 594
+Filename: kernel-module-r8723bs_4.4.1-3.2-r0_dm800se.ipk
+Source: kernel-module-r8723bs_4.4.1.bb
+Description: Driver for Realtek 8723BS wireless/bluetooth devices
+OE: kernel-module-r8723bs
+HomePage: http://www.realtek.com/
+License: GPL-2.0-only
+Priority: optional
+
 Package: kernel-module-ramoops-3.2-dm800se
 Version: 3.2-.7
 Depends: kernel-3.2-dm800se
@@ -12823,9 +12403,9 @@ Version: 3.2-.7
 Section: kernel
 Architecture: dm800se
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-MD5Sum: f2a41f105c7b5516bc7c4af48a803dc1
-SHA256sum: d7733e9a9282d2ff0eb69f98de9c6e52606eafc8fd0153ef23e82890ccd4d9d1
-Size: 2444862
+MD5Sum: 2bfd6fa16896cf9e47974cf2ee1d55f0
+SHA256sum: b91469ac5d3a787a8ac1e14fbfcd8d708b2a941a2ce116ba35be14175c629696
+Size: 2445186
 Filename: kernel-vmlinux_3.2-.7_dm800se.ipk
 Source: linux-dreambox_3.2.bb
 Description: Linux kernel for dm800se
@@ -12902,13 +12482,13 @@ Priority: optional
 
 Package: libtuxtxt32bpp0
 Version: 2.0+git82+14027950+1402795d66-r0
-Depends: libc6 (>= 2.39+git0+662516aca8), libfreetype6 (>= 2.13.2), libtuxtxt0 (>= 2.0+git82+14027950+1402795d66)
+Depends: libc6 (>= 2.39+git0+3463100f2d), libfreetype6 (>= 2.13.2), libtuxtxt0 (>= 2.0+git82+14027950+1402795d66)
 Provides: tuxtxt-enigma2
 Section: base
 Architecture: dm800se
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-MD5Sum: cf9e4373a84723504b161b0c064eb9cd
-SHA256sum: c870e9ec7868493aa1f3909de22b7a060a592d22f328178aebb59dc1c516f928
+MD5Sum: 9caa647dca3ecbd07e3b30790b7b521e
+SHA256sum: b4b8bb0d0aba226d6a4f9d5202c6edeb33bfe84169e6ef857c6e22714e1dc284
 Size: 74376
 Filename: libtuxtxt32bpp0_2.0+git82+14027950+1402795d66-r0_dm800se.ipk
 Source: tuxtxt-enigma2.bb
@@ -12949,77 +12529,14 @@ HomePage: https://www.yoctoproject.org/
 License: GPL-2.0-only
 Priority: optional
 
-Package: oe-alliance-branding-dbg
-Version: git1162+ab530f20+ab530f2cc6-r0
-Recommends: glibc-dbg
-Section: devel
-Architecture: dm800se
-Maintainer: oe-alliance team
-MD5Sum: fce796b2ab37734b3ce8f6d4b0c53a7e
-SHA256sum: 0839c27e10e4d265975ee8d3c676abc787a70eecc4fa6b95257980270b9ee649
-Size: 93408
-Filename: oe-alliance-branding-dbg_git1162+ab530f20+ab530f2cc6-r0_dm800se.ipk
-Source: oe-alliance-branding.bb
-Description: oe-alliance-branding version git-r0 - Debugging files
-OE: oe-alliance-branding
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: oe-alliance-branding-dev
-Version: git1162+ab530f20+ab530f2cc6-r0
-Recommends: glibc-dev, oe-alliance-branding (= git1162+ab530f20+ab530f2cc6-r0), python3-dev
-Section: devel
-Architecture: dm800se
-Maintainer: oe-alliance team
-MD5Sum: 098f5e500d6ed044b5810b1f8ab76ea0
-SHA256sum: 8bd6d01a2d51ce8ecc3db7c083338eb18c177c356cbb2534ac21d2373faf7d05
-Size: 632
-Filename: oe-alliance-branding-dev_git1162+ab530f20+ab530f2cc6-r0_dm800se.ipk
-Source: oe-alliance-branding.bb
-Description: oe-alliance-branding version git-r0 - Development files
-OE: oe-alliance-branding
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: oe-alliance-branding-src
-Version: git1162+ab530f20+ab530f2cc6-r0
-Section: devel
-Architecture: dm800se
-Maintainer: oe-alliance team
-MD5Sum: 465625e933ad6a255acfd6c3304cbe6b
-SHA256sum: e0841dc8d66a4470e81ddef3387161b8e76455207dc4dd108bcb1e34beda04da
-Size: 13572
-Filename: oe-alliance-branding-src_git1162+ab530f20+ab530f2cc6-r0_dm800se.ipk
-Source: oe-alliance-branding.bb
-Description: oe-alliance-branding version git-r0 - Source files
-OE: oe-alliance-branding
-License: GPL-2.0-or-later
-Priority: optional
-
-Package: oe-alliance-branding
-Version: git1162+ab530f20+ab530f2cc6-r0
-Depends: libc6 (>= 2.39+git0+662516aca8)
-Section: base
-Architecture: dm800se
-Maintainer: oe-alliance team
-MD5Sum: 8cb93fcf0512449d9de2165ecf34f066
-SHA256sum: ff47086f96b637c31742445a138cf38ba580baa5aa3fecf69443b3652f0e4203
-Size: 175770
-Filename: oe-alliance-branding_git1162+ab530f20+ab530f2cc6-r0_dm800se.ipk
-Source: oe-alliance-branding.bb
-Description: oe-alliance-branding version git-r0
-OE: oe-alliance-branding
-License: GPL-2.0-or-later
-Priority: optional
-
 Package: openmultiboot-dbg
 Version: 1.0+git124+fd923630+fd92363885-r0
 Recommends: freetype-dbg, glibc-dbg, json-c-dbg
 Section: devel
 Architecture: dm800se
 Maintainer: oe-alliance
-MD5Sum: e5c0994d4cfa879a8a2994d76d82ec44
-SHA256sum: 14fadd0ed100ce4d57a8f8817855af3c8b7ddcca5d3792431e3bb9b221f7d1c8
+MD5Sum: 3319b994277264b9baaf4d2643f90d13
+SHA256sum: c87357bb13cf3f29a3faff0b910e24c2fd73c5d06009185d7a1a104d799f68ca
 Size: 41508
 Filename: openmultiboot-dbg_1.0+git124+fd923630+fd92363885-r0_dm800se.ipk
 Source: openmultiboot.bb
@@ -13046,13 +12563,13 @@ Priority: optional
 
 Package: openmultiboot
 Version: 1.0+git124+fd923630+fd92363885-r0
-Depends: libc6 (>= 2.39+git0+662516aca8), libfreetype6 (>= 2.13.2), libjson-c5 (>= 0.17)
+Depends: libc6 (>= 2.39+git0+3463100f2d), libfreetype6 (>= 2.13.2), libjson-c5 (>= 0.17)
 Section: base
 Architecture: dm800se
 Maintainer: oe-alliance
-MD5Sum: 813b90f8532aa12266d1bd646b88dee4
-SHA256sum: 32b379d4eb706436b00cd6aa6d02f18cb3ead519d3f83d0c9bbb2defa0e95046
-Size: 46458
+MD5Sum: 9234087d5655f2d75264f32a520940a6
+SHA256sum: eae4e31d03b394eafdd5f49b115023ceeef78e85b1051a7d9b6108caf3b1f83f
+Size: 46472
 Filename: openmultiboot_1.0+git124+fd923630+fd92363885-r0_dm800se.ipk
 Source: openmultiboot.bb
 Description: Multi boot loader for enigma2
@@ -13686,6 +13203,55 @@ Source: packagegroup-base.bb
 Description: Extra packages required to fully support dm800se hardware
 OE: packagegroup-base
 License: MIT
+Priority: optional
+
+Package: satipclient-dbg
+Version: 1.0+git97+1c2ef4c0+1c2ef4c136-r1
+Recommends: glibc-dbg, libgcc-dbg, libstdc++-dbg
+Section: devel
+Architecture: dm800se
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: b1db8067c7709a08f459705b665e9dae
+SHA256sum: 6fd89af9b0ab2560f4e071f35f8518f0b040bd035b91fc17f34bb31d25edc74c
+Size: 278556
+Filename: satipclient-dbg_1.0+git97+1c2ef4c0+1c2ef4c136-r1_dm800se.ipk
+Source: satipclient.bb
+Description: satip client using vtuner - Debugging files
+OE: satipclient
+License: GPL-2.0-only
+Priority: optional
+
+Package: satipclient-dev
+Version: 1.0+git97+1c2ef4c0+1c2ef4c136-r1
+Recommends: glibc-dev, initscripts-dev, libgcc-dev, libstdc++-dev, satipclient (= 1.0+git97+1c2ef4c0+1c2ef4c136-r1), update-rc.d-dev
+Section: devel
+Architecture: dm800se
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: f9b6fe11d6d4340aa2605471856d2fca
+SHA256sum: e3f306bc2837e1e23bc5097fdc7dbbe123621c3c9fee8bfd0b07a0b00c757575
+Size: 666
+Filename: satipclient-dev_1.0+git97+1c2ef4c0+1c2ef4c136-r1_dm800se.ipk
+Source: satipclient.bb
+Description: satip client using vtuner - Development files
+OE: satipclient
+License: GPL-2.0-only
+Priority: optional
+
+Package: satipclient
+Version: 1.0+git97+1c2ef4c0+1c2ef4c136-r1
+Depends: libc6 (>= 2.39+git0+3463100f2d), libgcc1 (>= 13.3.0), libstdc++6 (>= 13.3.0)
+Recommends: update-rc.d
+Section: base
+Architecture: dm800se
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+MD5Sum: d7356cdbb4cf8f8c2044072ffbe81ea3
+SHA256sum: 3320f6193b2806e468347886d209755d0f0e528945709ece5aeecd4083bb0a3f
+Size: 32222
+Filename: satipclient_1.0+git97+1c2ef4c0+1c2ef4c136-r1_dm800se.ipk
+Source: satipclient.bb
+Description: satip client using vtuner
+OE: satipclient
+License: GPL-2.0-only
 Priority: optional
 
 Package: shadow-securetty-dbg
